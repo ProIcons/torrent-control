@@ -120,6 +120,8 @@ const isTorrentUrl = (url) => {
         return true;
     else if (url.match(/torrents\.php\?action=download&id=\d+/)) // gazelle
         return true;
+    else if (url.match(/download2\.php\?torrent=\d+/))
+        return true;
 
     return false;
 }
